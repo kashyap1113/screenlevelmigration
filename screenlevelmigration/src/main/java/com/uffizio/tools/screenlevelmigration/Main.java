@@ -46,8 +46,10 @@ public class Main {
 		Connection sourceConnection = DriverManager.getConnection(sourceConnectionString);
 		Connection destinationConnection = DriverManager.getConnection(destinationConnectionString);
 		
+		Statement sourceStatement = sourceConnection.createStatement();
+		Statement destinationStatement = destinationConnection.createStatement();
+		
 		ResultSet resultSet;
-		Statement statement;
 		
 		
 	}
